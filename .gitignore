@@ -1,0 +1,14 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+
+# IDEs
+.vscode/
+
+creds.json
+
+.DS_Store
+
+ny_taxi_postgres_data/
+pgadmin_conn_data/
