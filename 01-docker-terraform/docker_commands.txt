@@ -22,8 +22,19 @@ python3 nytaxi.py \
     --host=localhost \
     --port=5432 \
     --database=ny_taxi \
-    --table=green_taxi \
-    --url="https://github.com/DataTalksClub/nyc-tlc-data/releases/download/green/green_tripdata_2019-01.csv.gz" 
+    --table=green_taxi_oct19 \
+    --url="https://github.com/DataTalksClub/nyc-tlc-data/releases/download/green/green_tripdata_2019-10.csv.gz" 
+    
+
+python3 nytaxi.py \
+    --user=root \
+    --password=root \
+    --host=localhost \
+    --port=5432 \
+    --database=ny_taxi \
+    --table=taxi_zone_lookup \
+    --url="https://github.com/DataTalksClub/nyc-tlc-data/releases/download/misc/taxi_zone_lookup.csv" 
+
 
 docker build -t taxi_ingest:v001 .
 
